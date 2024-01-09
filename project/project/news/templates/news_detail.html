@@ -1,0 +1,16 @@
+{% extends 'news/default.html' %}
+
+
+{% block content %}
+    <div class="alert alert-warning mt=2">
+        <a class="navbar-brand" href="update/">Редактировать</a>
+        <h2>Автор: {{ new.author }}</h2>
+      <h1>{{ new.title }}</h1>
+      <p>Дата: {{ new.pub_date|date:"d.m.Y" }}</p>
+      <h2>{{ new.text }}</h2>
+
+    </div>
+{% endblock %}
+
+
+
